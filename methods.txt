@@ -1,0 +1,14 @@
+NON-VIRTUAL
+The prototype in the header and the definition in the source file.
+
+VIRTUAL PUBLIC
+To create objects with overridable methods, can only be virtual method pointer declared in derivable-class structure, and points to its native implementation, or leave it as NULL to be *pure virtual* which must be overridden by derived class as *non-pure virtual* may be not.
+
+VIRTUAL PRIVATE
+Method that only contains declaration in the header, don't have its public version to call directly. It does the work of delegating part of the job to derived class.
+
+NON-VIRTUAL PRIVATE
+To be non-common private method that, is not declared in class structure, nor can it be as public version called directly.
+
+CHAIN UP
+To extend the behavior of the class without modifying its code, the sub-class inherits to the class where the virtual public method is declared, re-implements and, calls (chain up to) the native implementation of its parent class. Sub-classe in inheritance tree chains up to its parent, at the beginning or the ending of the method.

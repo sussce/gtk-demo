@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <template class="MyOp" parent="GtkBox">
+    <property name="orientation">GTK_ORIENTATION_HORIZONTAL</property>
+    <property name="halign">GTK_ALIGN_START</property>
+    <property name="valign">GTK_ALIGN_START</property>
+    <property name="spacing">20</property>
+    
+    <child>
+      <object class="GtkLabel">
+        <property name="label">left</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkLabel">
+        <property name="label">right</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkLabel">
+        <property name="label">start</property>
+      </object>
+    </child>    
+  </template>
+</interface>

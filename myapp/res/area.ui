@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <template class="MyArea" parent="GtkFrame">    
+    <property name="halign">GTK_ALIGN_START</property>
+    <property name="valign">GTK_ALIGN_START</property>
+    
+    <child type="label">
+      <object class="GtkLabel" id="label">
+        <property name="label">drawing area</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkDrawingArea" id="area">
+        <property name="content-width">400</property>
+        <property name="content-height">400</property>
+      </object>
+    </child>
+  </template>
+</interface>

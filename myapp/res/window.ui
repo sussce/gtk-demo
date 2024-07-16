@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- gtk-builder-tool preview -->
+<interface>
+  <template class="MyWindow" parent="GtkApplicationWindow">
+    <property name="title" translatable="yes">my</property>
+    <property name="default-width">600</property>
+    <property name="default-height">400</property>
+    
+    <child type="titlebar">
+      <object class="GtkHeaderBar" id="header">
+        <child type="end">
+          <object class="GtkMenuButton" id="menu">
+            <property name="direction">none</property>
+          </object>
+        </child>
+        <!-- <child></child> -->
+      </object>
+    </child>
+    <child>
+      <object class="MyWidget" id="widget"/>
+    </child>
+  </template>
+</interface>

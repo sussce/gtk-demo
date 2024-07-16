@@ -1,0 +1,38 @@
+THE TYPE SYSTEM
+Or the GType system, remains object-oriented features and transparency cross-platform language binding. It does the works of, creation, registration and memory of types, maintains parent-child relations of objects, param-value, messaging.
+
+The Gtype, as named type by itself, or definition of GType type holds the unique identifier of registered type. The type is of GType as in the type system, or c type as in c language types. The type as managed by the type system is in broad terms, type object, falls into categories of, fundamental type and derived type, than what is defined as object type. Types fall into categories of, static type and dynamic type, of which, the type creation and registration are based.
+
+static type, is not loaded or unloaded at run-time as dynamic may be.
+
+fundamental type, of which other types are derived, can't be derived.
+
+derived type, of which types mainly are classed, —in the object-oriented sense of word, —derived directly or indirectly from the built-in base class, GObject.
+
+classed type, or of which types are derived, is implemented by at least structures of, the class and the instance. The class structure must contains in first-bytes the GTypeClass structure, the instance structure must contains in first-bytes the GTypeInstance structure, —to mean that, the object instance (by the pointer to the instance structure) contains in its first-bytes the pointer, points to the class structure for the object (where first bytes the GTypeClass structure).
+
+TYPE REGISTRATION
+
+OBJECT CONSTRUCTION AND DESTRUCTION
+
+OBJECT REFERENCE
+
+SIGNAL
+
+<ReturnType>
+callback (t_n *object[, <args> ], gpointer data);
+
+NAME CONVENTION
+Prefixing to evade namespace conflicts with other libraries.
+
+PrefixObject[Class]
+prefix_object_function
+PREFIX_TYPE_OBJECT
+PREFIX_OBJECT (object)
+PREFIX_OBJECT_CLASS (class)
+PREFIX_IS_OBJECT (object)
+PREFIX_IS_OBJECT_CLASS (class)
+PREFIX_OBJECT_GET_CLASS (object)
+prefix_object_class_init ()
+prefix_object_init ()
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <template class="MyComment" parent="GtkFrame">
+    <property name="halign">GTK_ALIGN_START</property>
+    <property name="valign">GTK_ALIGN_START</property>
+    
+    <child type="label">
+      <object class="GtkLabel">
+        <property name="label">comment</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkScrolledWindow">
+        <property name="min-content-width">200</property>
+        <property name="min-content-height">200</property>
+        
+        <child>
+          <object class="GtkTextView"/>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>
